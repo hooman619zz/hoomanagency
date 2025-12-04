@@ -30,8 +30,18 @@ export default function Contact() {
     setSubmitStatus(null);
 
     try {
-      // Replace with your form submission logic
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        throw new Error('Request failed');
+      }
+
       setSubmitStatus({ success: true, message: 'Your message has been sent successfully!' });
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {

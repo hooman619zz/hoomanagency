@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Link
-              href="mailto:hello@hooman.com"
+              href="#contact"
               className="rounded-full bg-[#007FFF] px-8 py-4 text-base font-semibold text-white shadow-sm hover:bg-[#0066CC] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#007FFF] transition-colors duration-200"
             >
               Let&apos;s Talk

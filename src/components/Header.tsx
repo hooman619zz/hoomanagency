@@ -56,7 +56,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
-              href="mailto:hello@hooman.com"
+              href="#contact"
               className="text-sm font-semibold leading-6 text-white bg-[#007FFF] px-6 py-3 rounded-full hover:bg-[#0066CC] transition-colors duration-200"
             >
               Let&apos;s Talk
@@ -108,7 +108,7 @@ export default function Header() {
                 </div>
                 <div className="py-6">
                   <Link
-                    href="mailto:hello@hooman.com"
+                    href="#contact"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#007FFF] hover:bg-[#0066CC] text-center"
                     onClick={() => setMobileMenuOpen(false)}
                   >
